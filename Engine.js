@@ -509,7 +509,7 @@ class Entity{
       ctx.beginPath();
       ctx.moveTo(0,0);
       ctx.lineTo(0,-this.size);
-      ctx.strokeStyle = "black";
+      ctx.strokeStyle = "#006600";
       ctx.lineWidth = 1;
       ctx.stroke();
     }
@@ -525,7 +525,7 @@ class Entity{
     ctx.beginPath();
     ctx.moveTo(this.posX,this.posY);
     ctx.lineTo(this.posX + this.speedX,this.posY + this.speedY);
-    ctx.strokeStyle = "black";
+    ctx.strokeStyle = "#00660";
     ctx.lineWidth = 1;
     ctx.stroke();
   }
