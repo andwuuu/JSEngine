@@ -168,8 +168,8 @@ class Entity{
     }else{
       ctx.beginPath();
       ctx.arc(this.posX,this.posY,this.size,0,2*Math.PI);
-      ctx.strokeStyle = "red";
-      ctx.fillStyle = "red";
+      ctx.strokeStyle = "aqua";
+      ctx.fillStyle = "aqua";
       ctx.lineWidth = 1;
       ctx.fill();
       ctx.stroke();
