@@ -598,22 +598,22 @@ class Ground{
     ctx.beginPath();
     ctx.moveTo(this.startX,this.startY);
     ctx.lineTo(this.endX,this.endY);
-    ctx.strokeStyle = "red";
+    ctx.strokeStyle = "aqua";
     ctx.lineWidth = this.size;
     ctx.stroke();
 
     ctx.beginPath();
     ctx.arc(this.startX,this.startY,this.size/2-1,0,2*Math.PI);
-    ctx.strokeStyle = "red";
-    ctx.fillStyle = "red";
+    ctx.strokeStyle = "aqua";
+    ctx.fillStyle = "aqua";
     ctx.lineWidth = 1;
     ctx.fill();
     ctx.stroke();
 
     ctx.beginPath();
     ctx.arc(this.endX,this.endY,this.size/2-1,0,2*Math.PI);
-    ctx.strokeStyle = "red";
-    ctx.fillStyle = "red";
+    ctx.strokeStyle = "aqua";
+    ctx.fillStyle = "aqua";
     ctx.lineWidth = 1;
     ctx.fill();
     ctx.stroke();
