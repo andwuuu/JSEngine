@@ -214,7 +214,7 @@ class Ground{
     ctx.beginPath();
     ctx.arc(this.startX,this.startY,this.size/2-1,0,2*Math.PI);
     ctx.strokeStyle = "aqua";
-    ctx.fillStyle = aqua";
+    ctx.fillStyle = "aqua";
     ctx.lineWidth = 1;
     ctx.fill();
     ctx.stroke();
