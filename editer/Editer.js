@@ -168,8 +168,8 @@ class Entity{
     }else{
       ctx.beginPath();
       ctx.arc(this.posX,this.posY,this.size,0,2*Math.PI);
-      ctx.strokeStyle = "#000099";
-      ctx.fillStyle = "#000099";
+      ctx.strokeStyle = "#8B4513";
+      ctx.fillStyle = "#8B4513";
       ctx.lineWidth = 1;
       ctx.fill();
       ctx.stroke();
@@ -207,22 +207,22 @@ class Ground{
     ctx.beginPath();
     ctx.moveTo(this.startX,this.startY);
     ctx.lineTo(this.endX,this.endY);
-    ctx.strokeStyle = "#000099";
+    ctx.strokeStyle = "#8B4513";
     ctx.lineWidth = this.size;
     ctx.stroke();
 
     ctx.beginPath();
     ctx.arc(this.startX,this.startY,this.size/2-1,0,2*Math.PI);
-    ctx.strokeStyle = "#000099";
-    ctx.fillStyle = "#000099";
+    ctx.strokeStyle = "#8B4513";
+    ctx.fillStyle = "#8B4513";
     ctx.lineWidth = 1;
     ctx.fill();
     ctx.stroke();
 
     ctx.beginPath();
     ctx.arc(this.endX,this.endY,this.size/2-1,0,2*Math.PI);
-    ctx.strokeStyle = "#000099";
-    ctx.fillStyle = "#000099";
+    ctx.strokeStyle = "#8B4513";
+    ctx.fillStyle = "#8B4513";
     ctx.lineWidth = 1;
     ctx.fill();
     ctx.stroke();
