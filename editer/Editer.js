@@ -87,7 +87,7 @@ class Editer{
       this.ctx.lineTo(this.canvas.width,y);
     }
 
-    this.ctx.strokeStyle = "#4689FF";
+    this.ctx.strokeStyle = "#996600";
     this.ctx.lineWidth = 0.1;
     this.ctx.stroke();
   }
