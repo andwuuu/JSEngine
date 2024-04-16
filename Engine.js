@@ -648,8 +648,8 @@ class Track{
     }else{
       ctx.beginPath();
       ctx.arc(this.posX,this.posY,this.size,0,2*Math.PI);
-      ctx.strokeStyle = "rgba(255,0,0,0.3)";
-      ctx.fillStyle = "rgba(255,0,0,0.3)";
+      ctx.strokeStyle = "rgba(218,165,32,0.3)";
+      ctx.fillStyle = "rgba(218,165,32,0.3)";
       ctx.lineWidth = 1;
       ctx.fill();
       ctx.stroke();
