@@ -44,8 +44,6 @@ engine.spawn("ground",[
 let saveData = engine.export();
 
 document.addEventListener("keydown",(event)=>{
-  event.preventDefault();
-
   engine.spawn("entity",[{
     posX: 450,
     posY: 200,
