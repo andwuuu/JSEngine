@@ -68,9 +68,11 @@ canvas.addEventListener("mousedown",(event)=>{
 });
 
 const gravityInput = document.getElementById("gravityInput");
+const gravityText = document.getElementById("gravityText");
 const gravityValue = document.getElementById("gravityValue");
 
 const frictionInput = document.getElementById("frictionInput");
+const frictionText = document.getElementById("frictionText");
 const frictionValue = document.getElementById("frictionValue");
 
 const debug = document.getElementById("debug");
@@ -87,7 +89,9 @@ const link = document.getElementById("link");
 const dataFile = document.getElementById("dataFile");
 
 gravityValue.textContent = gravityInput.value;
+gravityValue.textContent = gravityText.value;
 frictionValue.textContent = frictionInput.value;
+frictionValue.textContent = frictionText.value;
 
 gravityInput.addEventListener("input",(event)=>{
   gravityValue.textContent = event.target.value;
@@ -95,6 +99,16 @@ gravityInput.addEventListener("input",(event)=>{
 });
 
 frictionInput.addEventListener("input",(event)=>{
+  frictionValue.textContent = event.target.value;
+  engine.friction = event.target.value;
+});
+
+gravityText.addEventListener("change",(event)=>{
+  gravityValue.textContent = event.target.value;
+  engine.gravity = event.target.value;
+});
+
+frictionText.addEventListener("change",(event)=>{
   frictionValue.textContent = event.target.value;
   engine.friction = event.target.value;
 });
