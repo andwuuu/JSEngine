@@ -94,21 +94,25 @@ frictionValue.textContent = frictionInput.value;
 frictionValue.textContent = frictionText.value;
 
 gravityInput.addEventListener("input",(event)=>{
+  gravityText.value = event.target.value;
   gravityValue.textContent = event.target.value;
   engine.gravity = event.target.value;
 });
 
 frictionInput.addEventListener("input",(event)=>{
+  frictionText.value = event.target.value;
   frictionValue.textContent = event.target.value;
   engine.friction = event.target.value;
 });
 
 gravityText.addEventListener("change",(event)=>{
+  gravityInput.value = event.target.value;
   gravityValue.textContent = event.target.value;
   engine.gravity = event.target.value;
 });
 
 frictionText.addEventListener("change",(event)=>{
+  frictionInput.value = event.target.value;
   frictionValue.textContent = event.target.value;
   engine.friction = event.target.value;
 });
