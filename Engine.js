@@ -390,7 +390,7 @@ class Engine extends EventTarget {
       this.ctx.lineTo(this.canvas.width,y);
     }
 
-    this.ctx.strokeStyle = "#996600";
+    this.ctx.strokeStyle = "#BAD3FF";
     this.ctx.lineWidth = 0.1;
     this.ctx.stroke();
   }
@@ -509,7 +509,7 @@ class Entity{
       ctx.beginPath();
       ctx.moveTo(0,0);
       ctx.lineTo(0,-this.size);
-      ctx.strokeStyle = "#DDFFFF";
+      ctx.strokeStyle = "#BAD3FF";
       ctx.lineWidth = 1;
       ctx.stroke();
     }
@@ -525,7 +525,7 @@ class Entity{
     ctx.beginPath();
     ctx.moveTo(this.posX,this.posY);
     ctx.lineTo(this.posX + this.speedX,this.posY + this.speedY);
-    ctx.strokeStyle = "#DDFFFF";
+    ctx.strokeStyle = "#BAD3FF";
     ctx.lineWidth = 1;
     ctx.stroke();
   }
